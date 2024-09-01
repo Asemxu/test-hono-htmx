@@ -24,7 +24,10 @@ app.get('/' , (c) => {
   })
 })
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 console.log(`Server is running on port ${port}`)
 
-serve(app)
+serve({
+  fetch: app.fetch,
+  port 
+})
