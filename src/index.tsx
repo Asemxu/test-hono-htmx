@@ -14,15 +14,15 @@ const Content = () => (
 )
 
 
-// app.get('/', (c) => {
-//   return c.html(<Content />)
-// })
-
-app.get('/' , (c) => {
-  return  c.json({
-    "api_hono" : "Hello world"
-  })
+app.get('/', (c) => {
+  return c.html(<Content />)
 })
+
+// app.get('/' , (c) => {
+//   return  c.json({
+//     "api_hono" : "Hello world"
+//   })
+// })
 
 const port = process.env.PORT || 3000
 console.log(`Server is running on port ${port}`)
