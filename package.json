@@ -1,7 +1,10 @@
 {
   "name": "test-hono-htmx",
   "scripts": {
-    "dev": "tsx watch src/index.tsx"
+    "dev": "tsx watch src/index.tsx",
+    "build": "tsx ./build.ts",
+    "start": "tsx src/index.tsx"
+
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
