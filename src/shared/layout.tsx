@@ -1,19 +1,21 @@
 import { html } from "hono/html"
-
-const Layout = () => html`
+import type { FC } from 'hono/jsx'
+const Layout: FC = (props) => html`
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Full Stack App Hone HTMX</title>
   <meta name="description" content="Description">
   <head prefix="og: http://ogp.me/ns#">
   <meta property="og:type" content="article">
-  <!-- More elements slow down JSX, but not template literals. -->
-  <meta property="og:title" content="Title">
+  <meta property="og:title" content="Full Stack App Hone HTMX">
   <link rel="icon" type="image/jpeg" href="/static/img/test.jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/styles/app.css">
+  <script src="/static/scripts/htmx.min.js"></script>
 </head>
 <body>
-  <h1>Hola</h1>
+  ${props.children}
 </body>
 </html>
 `

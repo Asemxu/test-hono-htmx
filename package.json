@@ -1,7 +1,7 @@
 {
   "name": "test-hono-htmx",
   "scripts": {
-    "dev": "tsx watch src/index.tsx",
+    "dev": "tsx watch ./src",
     "start": "tsx src/index.tsx"
   },
   "dependencies": {
