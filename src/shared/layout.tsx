@@ -10,8 +10,7 @@ const Layout: FC = (props) => html`
   <meta property="og:type" content="article">
   <meta property="og:title" content="Full Stack App Hone HTMX">
   <link rel="icon" type="image/jpeg" href="/static/img/test.jpeg">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/static/styles/app.css">
+  <link rel="stylesheet" href="/static/styles/tailwind.css">
   <script src="/static/scripts/htmx.min.js"></script>
 </head>
 <body>
